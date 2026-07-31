@@ -1,5 +1,4 @@
 body {
-    /* simple left-to-right gradient background */
     background: linear-gradient(to right, #1e3c72, #2a5298);
     color: white;
     font-family: Arial, sans-serif;
@@ -8,9 +7,8 @@ body {
     margin: 0;
 }
 
-h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
+h1 {font-size: 50px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);}
+    font-size: 20px; }
 }
 
 p {
