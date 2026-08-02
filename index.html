@@ -1,11 +1,129 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My New Website _maxwell</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Maxwel Kaume - Cyber Security Specialist</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background: #0a0f1e; color: #e2e8f0; line-height: 1.7; }
+        
+        header { background: #111827; padding: 20px; text-align: center; position: sticky; top: 0; border-bottom: 2px solid #00ff88; }
+        nav a { color: #00ff88; margin: 0 15px; text-decoration: none; font-weight: 600; }
+        nav a:hover { color: #38bdf8; }
+        
+        .hero { padding: 120px 20px; text-align: center; background: linear-gradient(135deg, #0a0f1e 0%, #111827 100%); }
+        .hero h1 { font-size: 3rem; color: #00ff88; }
+        .hero h2 { font-size: 1.5rem; color: #38bdf8; margin: 10px 0; }
+        .hero p { font-size: 1.1rem; margin: 20px auto; max-width: 600px; }
+        
+        .section { padding: 80px 20px; max-width: 1100px; margin: auto; }
+        .section h2 { color: #00ff88; margin-bottom: 30px; text-align: center; font-size: 2rem; }
+        
+        .grid { display: flex; gap: 25px; flex-wrap: wrap; justify-content: center; }
+        .card { background: #111827; padding: 25px; border-radius: 12px; width: 320px; border: 1px solid #1e293b; }
+        .card:hover { border-color: #00ff88; }
+        
+        footer { background: #111827; text-align: center; padding: 30px; margin-top: 50px; border-top: 2px solid #00ff88; }
+        .btn { background: #00ff88; color: #0a0f1e; padding: 14px 30px; border-radius: 8px; text-decoration: none; display: inline-block; margin-top: 20px; font-weight: bold; }
+        .btn:hover { background: #38bdf8; }
+    </style>
 </head>
 <body>
-    <h1>WELCOME TO MY NEW WEBSITE</h1>
-    <p>I built it with pure knowledge and Intentions for a specific tasks</p>
+
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Expertise</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>[Maxwel Kaume]</h1>
+        <h2>Cyber Security Specialist | Ethical Hacker | Web Security</h2>
+        <p>Securing digital assets, testing vulnerabilities, and building safer web applications. Based in Nairobi, Kenya 🇰🇪</p>
+        <a href="#contact" class="btn">Hire Me For Security Audit</a>
+    </section>
+
+    <section class="section" id="about">
+        <h2>About Me</h2>
+        <div style="display: flex; gap: 40px; flex-wrap: wrap; align-items: flex-start;">
+            <div style="flex: 2; min-width: 300px;">
+                <h3 style="color: #38bdf8; margin-bottom: 15px;">Specializing in Cyber Security & Ethical Hacking</h3>
+                <p>
+                    I am a dedicated Cyber Security professional and ISP\FTTH Technician passionate about protecting individuals and businesses from digital threats. 
+                    My journey began with hands-on learning using Termux and Linux, and has evolved into professional penetration testing, 
+                    vulnerability assessment, and secure web development.
+                </p>
+                <p>
+                    I specialize in identifying security flaws before attackers do. Through ethical hacking and proactive security measures, 
+                    I help organizations strengthen their defenses, secure web applications, and ensure data privacy compliance.
+                </p>
+                <p>
+                    <strong>My Mission:</strong> To make the Kenyan digital space safer by providing practical, affordable, and effective 
+                    cyber security solutions for startups, SMEs, and developers.
+                </p>
+            </div>
+            <div style="flex: 1; min-width: 300px;">
+                <h3 style="color: #38bdf8; margin-bottom: 15px;">Core Values</h3>
+                <ul style="list-style: none; padding-left: 0;">
+                    <li>🛡️ <strong>Integrity:</strong> Ethical, legal, and transparent practices</li>
+                    <li>🔍 <strong>Precision:</strong> Thorough testing and detailed reporting</li>
+                    <li>📈 <strong>Continuous Learning:</strong> Staying ahead of new threats</li>
+                    <li>🤝 <strong>Education:</strong> Empowering clients on best security practices</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="skills">
+        <h2>Core Expertise</h2>
+        <div class="grid">
+            <div class="card">
+                <h3 style="color: #00ff88;">Penetration Testing</h3>
+                <p>Web app testing, network scanning, vulnerability assessment using tools like Nmap, Burp Suite, Metasploit, THC Hydra and Medusa.</p>
+            </div>
+            <div class="card">
+                <h3 style="color: #00ff88;">Secure Web Development</h3>
+                <p>Building websites with security-first approach. Preventing XSS, SQL Injection, CSRF and other OWASP top 10 vulnerabilities.</p>
+            </div>
+            <div class="card">
+                <h3 style="color: #00ff88;">Security Audits</h3>
+                <p>Comprehensive security audits for websites and applications. Detailed reports with actionable remediation steps.</p>
+            </div>
+            <div class="card">
+                <h3 style="color: #00ff88;">Linux & Termux</h3>
+                <p>Advanced command line, scripting, and security tool deployment on Linux environments for testing and monitoring.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <h2>Projects & Labs</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Secure Portfolio Website</h3>
+                <p>Developed this portfolio with security best practices: HTTPS, secure headers, and input validation.</p>
+            </div>
+            <div class="card">
+                <h3>Vulnerability Assessment Lab</h3>
+                <p>Set up a home lab for practicing ethical hacking on vulnerable VMs and reporting findings.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <h2>Let's Secure Your Project</h2>
+        <p style="text-align: center; margin-bottom: 20px;">Need a security audit or want to make your website hack-proof? Let's talk.</p>
+        <p style="text-align: center;">Email: <strong>maxwelkaume2024@gmail.com</strong></p>
+        <p style="text-align: center;">WhatsApp: <strong>+254 746275698</strong></p>
+        <p style="text-align: center;">Location: Nairobi, Kenya</p>
+    </section>
+
+    <footer>
+        <p>© 2026 [Maxwel Kaume]. Built with Security in Mind | Ethical Hacking Only</p>
+    </footer>
+
 </body>
 </html>
