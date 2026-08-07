@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Security Awareness Training</title>
+
+  <style>
+    :root {
+      --navy: #0f172a;
+      --blue: #2563eb;
+      --green: #15803d;
+      --amber: #b45309;
+      --gray: #64748b;
+      --light: #f8fafc;
+      --border: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 24px;
+      background: var(--light);
+      color: var(--navy);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    }
+
+    .status {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #dcfce7;
+      color: var(--green);
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    h1 {
+      margin: 18px 0 8px;
+      font-size: 30px;
+      line-height: 1.2;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 21px;
+    }
+
+    .lead {
+      color: var(--gray);
+      font-size: 17px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 22px;
+    }
+
+    .item {
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: #ffffff;
+    }
+
+    .item h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+    }
+
+    .item p {
+      margin: 0;
+      color: var(--gray);
+      font-size: 15px;
+    }
+
+    .warning {
+      margin-top: 24px;
+      padding: 18px;
+      border-left: 5px solid var(--amber);
+      border-radius: 8px;
+      background: #fffbeb;
+    }
+
+    .action {
+      margin-top: 24px;
+      padding: 18px;
+      border-left: 5px solid var(--blue);
+      border-radius: 8px;
+      background: #eff6ff;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 12px 18px;
+      border-radius: 8px;
+      background: var(--blue);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer {
+      margin-top: 26px;
+      color: var(--gray);
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 14px;
+      }
+
+      .card {
+        padding: 22px;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <section class="card">
+      <span class="status">Training completed</span>
+
+      <h1>This was a phishing-awareness simulation</h1>
+
+      <p class="lead">
+        No password, payment information, or other sensitive data was collected.
+        The purpose of this exercise is to help you recognize suspicious messages.
+      </p>
+
+      <h2>What happened?</h2>
+
+      <p>
+        The email used an invoice or payment scenario to test whether the request
+        would be verified through an approved process before action was taken.
+      </p>
+
+      <div class="grid">
+        <div class="item">
+          <h3>Unexpected payment request</h3>
+          <p>
+            Treat unfamiliar invoices or urgent payment reminders as suspicious
+            until confirmed.
+          </p>
+        </div>
+
+        <div class="item">
+          <h3>Link in the email</h3>
+          <p>
+            Check the destination before clicking and use the official finance
+            or procurement portal where possible.
+          </p>
+        </div>
+
+        <div class="item">
+          <h3>Vendor details</h3>
+          <p>
+            Compare the vendor, purchase order, amount, and account details with
+            trusted internal records.
+          </p>
+        </div>
+
+        <div class="item">
+          <h3>Urgency</h3>
+          <p>
+            Pressure to pay quickly is not a reason to bypass normal approval
+            and verification controls.
+          </p>
+        </div>
+      </div>
+
+      <div class="warning">
+        <strong>Important:</strong>
+        Never approve a payment or change bank details based only on an email.
+        Confirm the request using a trusted phone number, official portal, or
+        established internal workflow.
+      </div>
+
+      <div class="action">
+        <strong>What to do next time</strong>
+        <ol>
+          <li>Pause before opening links or attachments.</li>
+          <li>Check the sender address and link destination.</li>
+          <li>Verify invoices independently with Finance or Procurement.</li>
+          <li>Report suspicious messages using the approved reporting method.</li>
+        </ol>
+
+        <a class="button"
+           href="mailto:security@example.com?subject=Suspicious%20email%20report">
+          Report a Suspicious Email
+        </a>
+      </div>
+
+      <h2>Our measurement approach</h2>
+
+      <p>
+        This exercise records only training-related outcomes, such as whether
+        the page was visited and whether the training content was completed.
+        It does not request or store passwords, payment data, MFA codes, or
+        private employee information.
+      </p>
+
+      <p class="footer">
+        If you entered information into a real suspicious website, contact IT or
+        Security immediately and change affected credentials through the official
+        service.
+      </p>
+    </section>
+  </main>
+</body>
+</html>

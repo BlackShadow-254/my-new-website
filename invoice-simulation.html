@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice Payment Reminder</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f3f4f6;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #111827;
+    }
+
+    .container {
+      width: 100%;
+      padding: 32px 16px;
+    }
+
+    .card {
+      max-width: 640px;
+      margin: 0 auto;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .header {
+      padding: 24px 28px;
+      background: #111827;
+      color: #ffffff;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 21px;
+      line-height: 1.35;
+    }
+
+    .content {
+      padding: 28px;
+      font-size: 15px;
+      line-height: 1.65;
+    }
+
+    .invoice-box {
+      margin: 22px 0;
+      padding: 18px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      background: #f9fafb;
+    }
+
+    .invoice-row {
+      display: table;
+      width: 100%;
+      margin: 8px 0;
+    }
+
+    .invoice-label,
+    .invoice-value {
+      display: table-cell;
+      width: 50%;
+    }
+
+    .invoice-value {
+      text-align: right;
+      font-weight: bold;
+    }
+
+    .button-wrap {
+      margin: 28px 0;
+      text-align: center;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 8px;
+      background: #2563eb;
+      color: #ffffff !important;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .notice {
+      margin-top: 22px;
+      padding: 16px;
+      border-left: 4px solid #f59e0b;
+      border-radius: 6px;
+      background: #fffbeb;
+      color: #78350f;
+    }
+
+    .footer {
+      padding: 18px 28px 26px;
+      color: #6b7280;
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .muted {
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="header">
+        <h1>Invoice Payment Reminder</h1>
+      </div>
+
+      <div class="content">
+        <p>Hi {{.FirstName}},</p>
+
+        <p>
+          Our records show that the invoice below is awaiting payment.
+          Please review the details and follow your organization’s normal approval process.
+        </p>
+
+        <div class="invoice-box">
+          <div class="invoice-row">
+            <span class="invoice-label">Vendor</span>
+            <span class="invoice-value">Northstar Office Supplies</span>
+          </div>
+
+          <div class="invoice-row">
+            <span class="invoice-label">Invoice number</span>
+            <span class="invoice-value">INV-48291</span>
+          </div>
+
+          <div class="invoice-row">
+            <span class="invoice-label">Purchase order</span>
+            <span class="invoice-value">PO-7742</span>
+          </div>
+
+          <div class="invoice-row">
+            <span class="invoice-label">Amount</span>
+            <span class="invoice-value">KES 48,750</span>
+          </div>
+
+          <div class="invoice-row">
+            <span class="invoice-label">Due date</span>
+            <span class="invoice-value">12 August 2026</span>
+          </div>
+        </div>
+
+        <div class="button-wrap">
+          <a class="button" href="{{.URL}}">
+            View Invoice
+          </a>
+        </div>
+
+        <p class="muted">
+          Do not approve payment or change vendor bank details based solely on an email.
+          Verify the request using an independent, trusted contact method.
+        </p>
+
+        <div class="notice">
+          <strong>Security reminder:</strong>
+          Treat unexpected invoices, urgent payment requests, and bank-detail changes as suspicious until independently verified.
+        </div>
+      </div>
+
+      <div class="footer">
+        This message is part of an authorized internal security awareness exercise.
+        No payment details, passwords, or credentials are collected or stored.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
