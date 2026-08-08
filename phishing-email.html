@@ -78,75 +78,12 @@
 </head>
 <body>
   <div class="container">
-    <div class="card"><!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Action Required: Verify Your Account</title>
-<style>
-body { margin: 0; padding: 0; background-color: #f3f4f6; font-family: Arial, Helvetica, sans-serif; color: #111827; }
-.container { width: 100%; padding: 32px 16px; }
-.card { max-width: 640px; margin: 0 auto; background: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid #e5e7eb; box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
-.disclaimer { background: #fef3c7; border-bottom: 3px solid #f59e0b; padding: 16px 28px; text-align: center; }
-.disclaimer strong { color: #d97706; }
-.disclaimer p { margin: 8px 0 0; font-size: 13px; color: #78350f; }
-.header { background: linear-gradient(135deg, #0f172a, #2563eb); color: #ffffff; padding: 24px 28px; }
-.header h1 { margin: 0; font-size: 22px; line-height: 1.3; }
-.content { padding: 28px; font-size: 15px; line-height: 1.7; }
-.button-wrap { text-align: center; margin: 28px 0; }
-.button { display: inline-block; background: #2563eb; color: #ffffff !important; text-decoration: none; font-weight: bold; padding: 14px 22px; border-radius: 8px; font-size: 15px; cursor: not-allowed; }
-.note { background: #eff6ff; border-left: 4px solid #2563eb; padding: 16px 18px; margin-top: 24px; border-radius: 6px; color: #1f2937; }
-.footer { padding: 18px 28px 28px; color: #6b7280; font-size: 12px; line-height: 1.6; }
-.muted { color: #6b7280; }
-a { color: #2563eb; }
-.back-link { text-align: center; padding: 20px; }
-.back-link a { color: #2563eb; text-decoration: none; }
-</style>
-</head>
-<body>
-<div class="container">
-<div class="card">
-
-    <div class="disclaimer">
-        <strong>⚠️ SECURITY AWARENESS TRAINING TEMPLATE</strong>
-        <p>This is a simulated phishing email for educational purposes only. Not a real email.</p>
-    </div>
-
-    <div class="header">
-        <h1>Action Required: Verify Your Account</h1>
-    </div>
-    <div class="content">
-        <p>Hi {{.FirstName}},</p>
-        <p>We detected unusual activity on your account and need you to verify your access to avoid interruption.</p>
-        <p>Please review your account now and confirm your details using the secure link below.</p>
-        
-        <div class="button-wrap">
-            <a class="button" href="#">Verify Account</a>
-        </div>
-        
-        <p class="muted">If you were not expecting this request, please ignore it and report the message using the company’s approved reporting process.</p>
-        
-        <div class="note">
-            <strong>Security reminder:</strong> Real IT support should never ask for your password by email.
-        </div>
-    </div>
-    <div class="footer">
-        <p>This message was sent as part of an internal security awareness exercise. No credentials are collected or stored by this simulation.</p>
-    </div>
-</div>
-<div class="back-link">
-    <a href="index.html">← Back to Portfolio</a>
-</div>
-</div>
-</body>
-</html>
+    <div class="card">
       <div class="header">
         <h1>Action Required: Verify Your Account</h1>
       </div>
-
       <div class="content">
-        <p>Hi {{.FirstName}},</p>
+        <p>Hi {{.Name}},</p>
 
         <p>
           We detected unusual activity on your account and need you to verify your access to avoid interruption.
